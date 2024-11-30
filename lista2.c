@@ -79,16 +79,42 @@ void q2() {
 
 //3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
 void q3() {
-	
+	int num=0
+	printf("Digite um número qualquer: ");
+	scanf("%d", &num);
+	if(num % 3 == 0) {
+		printf("é multiplo de 3");
+	}
+	else {
+		printf("Não é um múltiplo de 3");
+	}
 }
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 void questao04() {
+	int num=0
+	printf("Digite um numero inteiro: ");
+	scanf("%d", &num);
+	if(num % 5 == 0) {
+		printf("É divisivel por 5");
+	}
+else {
+	printf("Não é divisivel por 5");
+}
 	
 }
 
 //5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 void questao05() {
+	int num=0
+	printf("Digite um numero inteiro: ");
+	scanf("%d", &num);
+	if(num % 3== 0 && num % 7==0) {
+		printf("É divisivel por 3 por 7");
+	} 
+	else {
+		printf("Não é divisivel por 3 e 7");
+	}
 
 }
 
@@ -97,12 +123,31 @@ void questao05() {
 //bruto. Faça um programa em linguagem C que permita entrar com o salário bruto e o
 //valor da prestação e informar se o empréstimo pode ou não ser concedido.
 void questao06() {
-
+	float sal=0, prest=0
+	printf("Digite seu salario bruto: ");
+	scanf("%.2f", &sal);
+	printf("Digite o valor da prestação: ");
+	scanf("%.2f", &prest);
+	if(prest<=(sal*0.3)) {
+		printf("O empréstimo pode ser concedido ");
+	}
+else {
+	printf("O empréstimo nao pode ser concedido pois excede a porcentagem máxima ")
+}
 }
 
 //7. Faça um programa que leia um número e indique se o número está compreendido
 //entre 20 e 50 ou não.
 void questao07() {
+	int num=0
+	printf("Digite um numero inteiro: ");
+	scanf("%d", &num);
+	if(num>= 20 && num<= 50) {
+		printf("Seu numero esta compreendido entre 20 e 50");
+	}
+else {
+	printf("O numero nao esta entre 20 e 50");
+}
 
 }
 
