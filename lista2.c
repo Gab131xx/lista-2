@@ -79,7 +79,7 @@ void q2() {
 
 //3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
 void q3() {
-	int num=0
+	int num=0;
 	printf("Digite um número qualquer: ");
 	scanf("%d", &num);
 	if(num % 3 == 0) {
@@ -92,7 +92,7 @@ void q3() {
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 void questao04() {
-	int num=0
+	int num=0;
 	printf("Digite um numero inteiro: ");
 	scanf("%d", &num);
 	if(num % 5 == 0) {
@@ -106,7 +106,7 @@ else {
 
 //5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 void questao05() {
-	int num=0
+	int num=0;
 	printf("Digite um numero inteiro: ");
 	scanf("%d", &num);
 	if(num % 3== 0 && num % 7==0) {
@@ -123,23 +123,23 @@ void questao05() {
 //bruto. Faça um programa em linguagem C que permita entrar com o salário bruto e o
 //valor da prestação e informar se o empréstimo pode ou não ser concedido.
 void questao06() {
-	float sal=0, prest=0
+	float sal=0, prest=0;
 	printf("Digite seu salario bruto: ");
-	scanf("%.2f", &sal);
+	scanf("%2f", &sal);
 	printf("Digite o valor da prestação: ");
-	scanf("%.2f", &prest);
+	scanf("%2f", &prest);
 	if(prest<=(sal*0.3)) {
 		printf("O empréstimo pode ser concedido ");
 	}
 else {
-	printf("O empréstimo nao pode ser concedido pois excede a porcentagem máxima ")
+	printf("O empréstimo nao pode ser concedido pois excede a porcentagem máxima ");
 }
 }
 
 //7. Faça um programa que leia um número e indique se o número está compreendido
 //entre 20 e 50 ou não.
 void questao07() {
-	int num=0
+	int num=0;
 	printf("Digite um numero inteiro: ");
 	scanf("%d", &num);
 	if(num>= 20 && num<= 50) {
@@ -154,6 +154,19 @@ else {
 //8. Faça um programa que leia um número e imprima uma das mensagens: 
 //"Maior do que 20", "Igual a 20"ou "Menor do que 20".
 void questao08() {
+	int num=0;
+	printf("Digite um numero inteiro");
+	scanf("%d", &num);
+	if(num>20) {
+		printf("Maior do que 20");
+	} 
+	if(num=20) {
+		printf("Igual a 20");
+	}
+   else {
+	printf("Menor do que 20");
+   }
+
 	
 }
 
@@ -161,12 +174,25 @@ void questao08() {
 //atual. O programa deve imprimir a idade da pessoa. Não se esqueça de verificar se o
 //ano de nascimento informado é válido.
 void questao09() {
-	
+	int num=0, num1=0;
+	printf("Digite seu ano de nascimento");
+	scanf("%d", &num);
+	printf("Digite o ano atual");
+	scanf("%d", &num1);
+	if(num>0 && num<2025, num1>0 && num1<105) {
+	printf("Sua idade atual é: %d/n ", num1-num);
+	}
 }
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
 //crescente.
 void questao10() {
+	int num=0, num1=0, num2=0;
+	printf("Digite 3 numeros inteiros");
+	scanf("%d", &num);
+	scanf("&d", &num1);
+	scanf("&d", &num2);
+	if( )
 
 }
 
@@ -298,11 +324,12 @@ int main() {
 	scanf("%d", &opcao);
 	switch (opcao) {
 		case 1:
-			q1();
+			q9();
 			break;
 		case 2:
-			q2();
+			q10();
 			break;
+
 		default:
 			printf("Opção inválida!");
 	}
